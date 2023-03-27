@@ -1,0 +1,284 @@
+:root {
+    --yellow: #FDEB99;
+    --darkGreen: #0C360A;
+    --lightGreen: #A8CE67;
+    --mediumGreen: #5B9936;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+* {
+    color: var(--darkGreen)!important;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* navigation css */
+.navbar {
+    background-color: white;
+    font-size: 19px;
+}
+
+.nav-link:hover {
+    position: relative;
+    top: 1.5px;
+    text-decoration: underline;
+}
+
+.offcanvas {
+    background-color: var(--yellow);
+}
+
+/* header css */
+.header-banner {
+    background-image: url(images/header1.gif);
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header-banner-why {
+    background-image: url(images/whybanner.jpg);
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+}
+
+.headline {
+    background-color: #FDEB99;
+    width: 50%;
+    position: relative;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.blog-header {
+    background-image: linear-gradient(#FDEB99, white);
+}
+
+.blog-img img {
+    width: 620px;
+    height: 400px;
+    position: relative;
+}
+
+/* section css */
+.content-image img {
+    width: 350px;
+    height: 250px;
+    background-size: cover;
+    border-radius: 7px;
+}
+
+.blog-card {
+    width: 15rem;
+    height: 22rem;
+}
+
+.blog-card:hover {
+    border-radius: 7px;
+    box-shadow: 2px 2px 5px 2px #FDEB99;
+    position: relative;
+    top: 2px;
+}
+
+.card-body {
+    height: 10rem;;
+}
+
+.blog-card-img {
+    width: 16rem;
+    height: 9rem;
+    border-radius: 7px 7px 0 0;
+}
+
+.blog-button {
+    position: relative;
+    top: 15px;
+}
+
+.blog-button btn {
+    position: relative;
+    top: 15px;
+}
+
+.description-box {
+    width: 350px;
+    height: auto;
+}
+
+.content-box, .review-area {
+    width: 50%;
+    border-radius: 7px;
+
+}
+
+.card-img-top {
+    width: 100px;
+    height: 150px;
+}
+
+.motto-why {
+    position: relative;
+    top: -20px;
+}
+
+.motto-content {
+    width: 40%;
+    background-color: var(--yellow);
+    opacity: 0.9;
+}
+
+.why-main {
+    background-image: linear-gradient(white, #FDEB99);
+}
+
+.why-content {
+    width: 50%;
+}
+
+.story-box {
+    width: 90%;
+    height: 310px;
+    position: relative;
+    left: 75px;
+}
+
+.why-mid {
+    height: 310px;
+    background-color: var(--yellow);
+}
+
+.inspiration-img img {
+    width: 450px;
+    height: 340px;
+    position: relative;
+}
+
+.inspiration-img2 img {
+    width: 360px;
+    height: 520px;
+    position: relative;
+}
+
+.story-box1 {
+    width: 90%;
+    height: 490px;
+    position: relative;
+    left: 75px;
+}
+
+/* footer css */
+.bi {
+    font-size: 25px;
+}
+
+.btn {
+    background-color: var(--yellow);
+}
+
+.footer-nav {
+    background-color: var(--yellow);
+}   
+
+.blog-section {
+    height: auto;
+} 
+
+.blog-card {
+    width: 16rem;
+}
+
+.profile-box {
+    width: auto;
+    height: 80vh;
+    background-color: var(--mediumGreen);
+}
+
+.review-area {
+    background-color: var(--lightGreen);
+}
+
+.footer-list {
+    list-style-type: none;
+    font-size: 17px;
+    padding: 6px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-list a {
+    text-decoration: none;
+}
+
+.footer-list a:hover {
+    text-decoration: underline;
+    position: relative;
+    top: 1.5px;
+}
+
+@media (max-width:1170px) {
+    .content-box {
+        flex-direction: column;
+    }
+    .content-box-reverse {
+        flex-direction: column-reverse;
+    }
+    .motto-content {
+        width: 70%;
+    }
+    .why-content {
+        width: 80%;
+    }
+    .story-box {
+        position: relative;
+        left: 50px;
+    }
+    .story-box1 {
+        left: 50px;
+    }
+    .blog-box {
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width:768px) {
+    .offcanvas-body {
+        display: flex;
+        justify-content: start!important;
+    }
+    .motto-content {
+        width: 90%;
+    }
+    .why-content {
+        width: 95%;
+    }
+    .story-box {
+        width: 90%;
+        height: auto;
+        flex-direction: column-reverse;
+        left: 40px;
+    }
+    .story-box1 {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        left: 40px;
+    }
+    
+    
+    .footer-logo {
+        flex-direction: column;
+    }
+
+    .footer-body {
+        flex-direction: column;
+    }
+}
+
